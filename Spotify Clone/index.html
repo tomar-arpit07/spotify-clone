@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utils.css">
+</head>
+
+<body>
+    <div class="container">
+        
+        <nav class="flex justify-content">
+            <img id="logo" class="invert" src="images/logo.svg" alt="logo">
+            <div class="midPortion flex">
+                <div id="homeParent"><img class="home invert" src="images/home.svg" alt="home"></div>
+                <div class="input flex">
+                    <img class="invert searchImg" src="images/search.svg" alt="search img">
+                    <input type="text" id="searchText" placeholder="What do you want to play?">
+                    <img class="invert browseImg" src="images/browse.svg" alt="browse img">
+                </div>
+            </div>
+            <div class="end flex align-items">
+                <span id="signup">Sign Up</span>
+                <span id="login">Log In</span>
+            </div>
+        </nav>
+
+        <main class="flex">
+
+            <div class="box1">
+                <div class="box1header flex justify-content">
+                    <div class="YourLibrary flex align-items">
+                        <img class="invert" src="images/library.svg" alt="library img">
+                        <span>Your Library</span>
+                    </div>
+                    <div class="plusimg invert">
+                        <span>
+                            <img src="images/close.svg" alt="plusimg">
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="box1main">
+                   
+                    <div class="songList">
+                        <ul>
+                            
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="box1footer">
+
+                    <div class="box1footerComp flex list1">
+                        <ul>
+                            <li class="li">Legal</li>
+                            <li class="li">Safety&Privacy</li>
+                            <li class="li">Privacy Policy</li>
+                        </ul>
+                    </div>
+
+                    <div class="box1footerComp flex list2">
+                        <ul>
+                            <li class="li">Cookies</li>
+                            <li class="li">About us</li>
+                            <li class="li">Accessibility</li>
+                        </ul>
+                    </div>
+
+                    <span class="box1footerComp list3">Cookies</span>
+
+                    <div class="box1footerComp">
+                        <button class="box1footerButton flex">
+                            <img class="invert" src="images/globe.svg" alt="golbe img">
+                            <span>English</span>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="box2">
+                <div class="hamh1 flex">
+                    <h1>Spotify Playlists</h1>
+                    <img class="invert" src="images/hamburger.svg" alt="hamburger img">
+                </div>
+                <div class="cardContainer">
+                    
+                </div>
+            </div>
+        </main>
+
+        <div class="playback">
+            <div class="abovebar flex">
+                <div class="songname"></div>
+                <div class="songbuttons flex">
+                    <img id="previous" class="invert" src="images/previous.svg" alt="previous">
+                    <img id="play" class="invert" src="images/play.svg" alt="play/pause">
+                    <img id="next" class="invert" src="images/next.svg" alt="next">
+                </div>
+                <div class="timevol flex">
+                    <div class="timestamp"></div>
+                    <div class="volume flex">
+                        <img class="invert mute" src="images/volume.svg" alt="volume button">
+                        <input type="range" name="volume" id="">
+                    </div>
+                </div>
+            </div>
+            <div class="seekbar">
+                <div class="circle"></div>
+            </div>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
