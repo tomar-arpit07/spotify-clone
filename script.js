@@ -107,7 +107,7 @@ async function displayAlbums() {
 }
 
 async function main() {
-    await getSongs("songs/cs");
+    await getSongs("/songs/cs");
     playMusic(songs[0],true);
 
     await displayAlbums();
